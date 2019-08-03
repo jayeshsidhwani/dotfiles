@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Aliases
+alias runubuntu="docker run -e HOST_IP=$(ifconfig en0 | awk '/ *inet /{print $2}') -v ~/Developer/workspace/ubuntu -t -i ubuntu.varnish /bin/bash"
+
+# JAVA
+## Versions
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_12_HOME=$(/usr/libexec/java_home -v12)
+
+# Exports
+## Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export RVM="$HOME/.rvm/bin"
+export GOBIN="/usr/local/opt/go@1.11/bin"
+export GOPATH="/Users/Jayesh/Developer/libraries/go"
+export SPARKBIN="/Users/Jayesh/Developer/libraries/spark/bin"
+
+export PATH="$SPARKBIN:$GOPATH:$GOBIN:$RVM:$PATH"
