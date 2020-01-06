@@ -7,7 +7,7 @@ alias runubuntu="docker run -e HOST_IP=$(ifconfig en0 | awk '/ *inet /{print $2}
 ## Versions
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_12_HOME=$(/usr/libexec/java_home -v12)
+export JAVA_13_HOME=$(/usr/libexec/java_home -v13)
 
 # Exports
 ## Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

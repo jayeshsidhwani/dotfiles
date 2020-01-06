@@ -19,12 +19,12 @@ function setJava {
 			export JAVA_HOME=$JAVA_11_HOME
 			;;
 		
-		12)
-			export JAVA_HOME=$JAVA_12_HOME
+		13)
+			export JAVA_HOME=$JAVA_13_HOME
 			;;
 
 		*)
-			echo $("Only 11 and 12 versions of Java are configured")
+			echo $("Only 8, 11, and 13 versions of Java are configured")
 		
 	esac
 }
